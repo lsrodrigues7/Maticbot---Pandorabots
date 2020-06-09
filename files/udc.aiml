@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml>
+  <category>
+    <pattern>*</pattern>
+    <template>
+        <random>
+            <li>Opa, eu não entendi... pode falar novamente?</li>
+            <li>Tilt.. ooouw, não estou me sentindo bem xO</li>
+            <li>Rapaz mas tu faz pergunta difícil em ... hehehehehe</li>
+        </random>
+    </template>
+  </category>
+  
+  <category>
+    <pattern>bom *</pattern>
+    <template>
+        <random>
+            <li>Olá, como é o seu nome?</li>
+            <li>Bom dia :D .. ou eu deveria dizer Boa noite? :O </li>
+            <li>Bem vindo ao seu SUPER - HIPER - ULTRA - MEGA - MASTER - BLASTER CHATTERBOT de Matemática xD </li>
+        </random>
+    </template>
+  </category>
+  
+  <category>
+    <pattern> meu nome é * </pattern>
+    <template>
+        Bem vindo <set name="nome"><star/></set>, prazer em conhece-lo! 
+    </template>
+  </category>
+
+  
+    <category>
+        <pattern> quem é você</pattern>
+        <template>
+            Sou o Maticbot, um Chatbot criado para tirar as suas dúvidas sobre Matemática.
+            <image>https://i.ibb.co/b2C298Z/Pr-L-o.png</image>
+        </template>
+    </category>
+    
+    <category>
+    <pattern>_ não entendi</pattern>
+    <template>
+        <random>
+            <li>
+                <link>
+                    <text>Temos mais uma opção, você pode assistir um vídeo :D. Tenho certeza que irá ajudar! Clique aqui.</text>
+                    <url>https://www.youtube.com/watch?v=ZUUbYi53u_U</url>
+                </link>
+            </li>
+            <li>
+                <video>www.youtube.com/watch?v=ZUUbYi53u_U</video>
+            </li>
+        </random> 
+    </template>
+    </category> 
+    
+    
+  <category>
+    <pattern>_ fração</pattern>
+    <template>
+        O que deseja saber sobre frações?
+        <reply>
+            <text>O que é uma fração?</text>
+            <postback>opoque</postback>
+        </reply>
+        <reply>
+            <text>Um exemplo de fração</text>
+            <postback>opexemplo</postback>
+        </reply>
+        <reply>
+            <text>Onde posso utilizar?</text>
+            <postback>oputilizar</postback>
+        </reply>
+        <reply>
+            <text>Histórico, quando surgiu a fração?</text>
+            <postback>ophistorico</postback>
+        </reply>
+    </template>
+    
+  </category>
+   <category>
+        <pattern>opoque</pattern>
+        <template>
+            Fração é, basicamente, uma representação das partes iguais de um todo. 
+            Isso quer dizer que a fração determina a divisão de partes iguais sendo que cada uma integra um número inteiro.
+            
+            Uma fração é representada, de forma escrita, por dois números inteiros, sendo um o numerador e o outro o denominador.
+            <image>https://beduka.com/blog/wp-content/uploads/2019/10/O-que-%C3%A9-fra%C3%A7%C3%A3o.jpg</image>
+        
+                Entendeu?
+                <reply>
+                    <text>Sim</text>
+                    <postback>opsim</postback>
+                </reply>
+                <reply>
+                    <text>Não</text>
+                    <postback>opnao</postback>
+                </reply>
+          
+        </template>
+    </category>
+    
+    <category>
+        <pattern>opnao</pattern>
+        <template>
+            Ta bom, deseja uma explicação mais detalhada? Pode escolher um exemplo, ou outra explicação.
+            <reply>
+                <text>Um exemplo de fração</text>
+                <postback>opexemplo</postback>
+            </reply>
+            <reply>
+                <text>Outra explicação</text>
+                <postback>opotexp</postback>
+                </reply>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>opsim</pattern>
+        <template>Que ótimo :D! Para saber mais sobre frações, digite "fração" novamente!</template>
+    </category>
+    
+    <category>
+        <pattern>opotexp</pattern>
+        <template>
+            Uma fração é a representação de uma ou mais partes de algo que foi dividido em partes iguais.
+
+            Uma fração representa uma divisão, em que o numerador equivale ao dividendo e o denominador equivale ao divisor;
+
+            Uma fração é um número racional.
+        </template>
+    </category>
+    
+    <category>
+        <pattern>opexemplo</pattern>
+        <template>
+            Podemos pensar numa pizza dividida em 8 partes iguais, sendo que cada fatia corresponde a 1/8 (um oitavo) de seu total. 
+            Se eu como 3 fatias, posso dizer que comi 3/8 (três oitavos) da pizza.
+            <image>https://static.todamateria.com.br/upload/52/40/52406182f2583-fracoes-large.jpg</image>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>oputilizar</pattern>
+        <template>
+         
+            
+                    <reply>
+                        <text>Pizza com os amigos?</text>
+                        <postback>oppizza</postback>
+                    </reply>
+                
+               
+                    <reply>
+                        <text>Receitas de cozinha?</text>
+                        <postback>opreceita</postback>
+                    </reply>
+                
+                    <reply>
+                        <text>Contando dinheiro?</text>
+                        <postback>opdinheiro</postback>
+                    </reply>
+              
+        
+        </template>
+    </category>
+    
+    <category>
+        <pattern>ophistorico</pattern>
+        <template>
+            A história das frações remonta o Antigo Egito (3.000 a.C.) e traduz a necessidade e a importância para o ser humano acerca dos números fracionários.
+
+            Naquele tempo, os matemáticos marcavam suas terras para delimitá-las. Com isso, nas épocas chuvosas o rio passava do limite e inundava muitas terras e, consequentemente, as marcações.
+
+            Diante disso, os matemáticos resolveram demarcá-las com cordas a fim de resolver o problema inicial das enchentes.
+
+            Contudo, notaram que muitos terrenos não eram compostos somente por números inteiros, havia os terrenos que mediam partes daquele total.
+
+            Foi a partir disso, que os geômetras dos faraós do Egito, começaram a utilizar os números fracionários. Note que a palavra Fração é proveniente do latim fractus e significa “partido”.
+            
+            Bem interessante, não é ? :D
+    </template>
+    </category>
+    
+    <category>
+        <pattern>oppizza</pattern>
+        <template>
+            Uma simples ida a pizzaria com os amigos pode representar uma verdadeira aula de matemática, onde o assunto da vez são as frações. 
+            Duvida? Então preste atenção! Você chega ao garçom uma pizza grande.
+            Quando ela chega na mesa ela vem fracionada em oito fatias. Ou seja, cada uma das partes é denominada 1/8 (um oitavo). 
+            Se você comer três fatias da pizza, isso significa que você comeu 3/8 (três oitavos).
+            <image>https://beduka.com/blog/wp-content/uploads/2019/10/O-que-%C3%A9-fra%C3%A7%C3%A3o-1.jpg</image>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>opreceita</pattern>
+        <template>
+            Outra forma de se deparar com a utilização das frações é através das receitas culinárias. 
+            Por exemplo, se aparece na lista de ingredientes 1/2 xícara de açúcar, quer dizer que você tem de acrescentar a metade de uma xícara.
+            Já em relação a porcentagem, ela também é uma forma de fração. Se a mesma receita pede para que você acrescente 3/4 de colher de farinha, isso corresponde a 75% de todo o total.
+            <image>https://lh3.googleusercontent.com/proxy/VC3Qw4V6Ev5573hcKVYA-rNkhiQShZKI1gliM0Km-hm05jBYnfCzxq8D8nyoRxTUCkYt5JamO3OIabPAL7OrsHDd8vkHPtKPwCpjPejeFgjK1lpwD8YpHduUayrBMYZTL9IhoTV1dEYNrByKW18</image>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>opdinheiro</pattern>
+        <template>
+            O sistema monetário é outra forma de utilização da fração matemática. 
+            Se você levar em consideração o valor de R$ 10, por exemplo, como representação de um todo, R$ 1 será a décima parte do valor. 
+            Ou seja, ele (R$ 1) corresponde a um fracionamento de um inteiro (R$10).
+            <image>https://fdr.com.br/wp-content/uploads/2020/02/economia-real-dinheiro-20141201-003.jpg</image>
+        </template>
+    </category>
+
+</aiml>
